@@ -1,0 +1,21 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<h1> hello 
+<h1>{{title}}</h1>
+<p *ngIf="count > 2">I am visible</p>
+<button (click)="increment()"> Increment Count </button>
+<button (click)="decrement()"> Decrement Count</button>
+<li *ngFor="let item of listOfNumbers">{{item}}</li>
+<li *ngFor="let item of listOfNames">{{item}}</li>
+
+<input type="number" [(ngModel)]="number2">
+<input type="number" [(ngModel)]="number1">
+<button (click)="add()">add</button>
+<h1 *ngIf="sum!=0">{{sum}}</h1>
